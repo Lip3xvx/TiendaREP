@@ -1,0 +1,129 @@
+body{
+  background-image: url(https://cdn.wallpapersafari.com/69/50/QDyVgz.jpg);
+}
+h1 {
+    text-align: center;
+   background-color: blanchedalmond;
+  }
+  
+  .shop-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #cccccc1f;
+  }
+  
+  .producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .producto img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .producto .descripcion {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .cart-icon {
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #cccccc2d;
+  }
+  
+  .modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    
+   
+  }
+
+  .modal-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .modal-container .descripcion {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .cart-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 999;
+  }
+  
+  .cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .cart-header h2 {
+    margin: 0;
+  }
+  
+  .cart-close {
+    cursor: pointer;
+  }
+  
+  .cart-content {
+    padding: 20px;
+  }
+  
+  .cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .cart-total h3 {
+    margin: 0;
+  }
+  
+  #cartTotal {
+    font-weight: bold;
+  }
+  
